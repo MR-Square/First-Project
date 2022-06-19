@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>First Project</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('/img/bg1.jpg');
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 2px;
+            top: 9px;
+        }
+
+        .left img {
+            width: 87px;
+            height: 72px;
+            padding: 0px 12px;
+        }
+
+        .left div {
+            font-size: 12px;
+            text-align: center;
+            line-height: 8px;
+        }
+
+        .mid {
+            display: block;
+            width: 42%;
+            margin: 9px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 2px;
+            top: 9px;
+        }
+
+        .btn {
+            margin: 12px 9px;
+            padding: 4px 11px;
+            border: 2px solid gray;
+            border-radius: 11px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            /* filter: brightness(70%); */
+            color: rgb(171, 177, 180);
+        }
+
+        .navbar {
+            padding: 0px;
+        }
+
+        .navbar li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: #ff7a7a;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 50px auto;
+            width: 40%;
+            padding: 10px 15px;
+        }
+
+        .admissionForm h2 {
+            text-align: center;
+            color: rgb(255, 149, 149);
+        }
+
+        .admissionForm input {
+            font-size: 20px;
+            display: block;
+            width: 50%;
+            margin: 5px auto;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .userInfo{
+            font-size: 21px;
+        }
+        .footer{
+            background-color: pink;
+            
+            border: 2px solid purple;
+        }
+        .footerInfo{
+            border: 2px solid black;
+            width: 40%;
+            margin: auto;
+        }
+
+        .footerInfo ul{
+            list-style-type: none;
+            padding: 5px 5px;
+        }
+        .footerInfo ul li{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="/img/icon1.jpg" alt="">
+            <div>RAZA FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="" class="admissionForm">
+            <h2>Join in your dream GYM now!</h2>
+            <div class="userInfo">
+                Name: <input type="text" name="userName" id="userName" placeholder="enter your name">
+            </div>
+            <div class="userInfo">
+                Age: <input type="text" name="userAge" id="userAge" placeholder="enter your age">
+            </div>
+            <div class="userInfo">
+                Gender: <input type="text" name="userGender" id="userGender" placeholder="enter your gender">
+            </div>
+            <div class="userInfo">
+                Contact: <input type="text" name="userContact" id="userContact" placeholder="enter your contact">
+            </div>
+            <div class="buttons">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footerInfo">
+                <ul>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Copy-right</li>
+                </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
